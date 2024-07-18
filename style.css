@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Included Fonts */
+
+@font-face {
+    font-family: "Aktiv";
+    src: url(font/AktivGrotesk.ttf)format("truetype"), url(font/AktivGrotesk.woff) format("woff"), url(font/AktivGrotesk.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "ARGCond Bold";
+    src: url(font/ARGCondBold.ttf) format("truetype"), url(font/ARGCondBold.woff)format("woff"), url(font/ARGCondBold.woff) format("woff"), url(font/ARGCondBold.woff2)format("woff2");
+}
+
+@font-face {
+    font-family: "ARGCond Med";
+    src: url(font/ARGCondMedium.ttf)format("truetype"), url(font/ARGCondMedium.woff)format("woff"), url(font/ARGCondMedium.woff2)format("woff2");
+}
+
+@font-face {
+    font-family: "ARGCond Reg";
+    src: url(font/ARGCondRegular.ttf)format("truetype"), url(font/ARGCondRegular.woff) format("woff"), url(font/ARGCondRegular.woff2)format("woff2");
+}
+
+@font-face {
+    font-family: "ARG Med";
+    src: url(font/ARGMedium.ttf)format("truetype"), url(font/ARGMedium.woff)format("woff"), url(font/ARGMedium.woff2)format("woff2");
+}
+
+
+
+/*Colors*/
+
+.white {
+    color: #ffffff;
+}
+
+.grey {
+    color: #ededed;
+}
+
+.black {
+    color: #010101;
+}
+
+.red {
+    color: #E82525;
+}
+
+.bgwhite {
+    background-color: #ffffff;
+}
+
+
+.bggrey {
+    background-color: #ededed;
+}
+
+
+.bgblack {
+    background-color: #010101;
+}
+
+
+.bgred {
+    background-color: #E82525;
+}
+
+
+
+
+
+
+/*Text Styles*/
+
+h1 {
+    font-family: "ARGCond Bold", sans-serif;
+    font-size: 90px;
+    text-transform: uppercase;
+    margin: 0px;
+    display: inline-block;
+}
+
+h2 {
+    font-family: "ARGCond Bold", sans-serif;
+    font-size: 52px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "ARGCond Bold", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "ARGCond Bold", sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: "ARGCond Bold", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: "ARGCond Med", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.caption {
+    margin-left: 5px;
+    font-family: "Aktiv", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: justify;
+    width: inherit;
+}
+
+p {
+    font-family: "ARGCond Reg", sans-serif;
+    font-size: 18px;
+}
+
+p .bold {
+    font-family: "ARGCond Med", sans-serif;
+}
+
+.buttontext {
+    font-family: "ARGCond Med", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* structure */
+
+body {
+    min-width: 960px;
+    margin: auto;
+
+}
+
+section {
+    padding: 100px 250px;
+    display: block;
+    overflow: hidden;
+    justify-content: space-between;
+
+}
+
+hgroup {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 70px;
+}
+
+.content {
+    width: auto;
+    display: block;
+    min-width: 400px;
+    text-align: right;
+    float: right;
+
+}
+
+
+
+
+/*color section*/
+
+.circle {
+    display: inline-block;
+    width: 178px;
+    height: 178px;
+    text-align: center;
+    padding: 55px 0;
+    border-radius: 90px;
+    margin: 0px 14px;
+
+}
+
+.border {
+    border: 2px solid #ededed;
+}
+
+/*Font section*/
+.tablefonts {
+    float: right;
+    border-spacing: 0;
+    width: auto;
+    border-collapse: collapse;
+
+}
+
+.tablefonts tr {
+    vertical-align: top;
+}
+
+.tablefonts td {
+    padding-right: 5px;
+}
+
+/*Styles section*/
+
+.tablestyles {
+    float: right;
+    border-collapse: collapse;
+    text-align: left;
+    width: auto;
+}
+
+.tablestyles tr {
+    border-bottom: 1px solid;
+
+}
+
+.tdleft {
+    width: 150px;
+
+}
+
+.tdright {
+    width: 300px;
+    padding: 20px 0px;
+
+}
+
+/*Links section*/
+.column {
+    text-align: left;    
+    float: left;   
+    margin-left: 10px;
+    max-width: 200px;
+
+}
+.icon {
+    width: 14px;
+    padding-bottom: 4px;
+    
+}
+.cont {
+    height: 64px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+a.btn2 {
+    height: 64px;
+    padding: 22px 25px 20px 25px;
+    border-radius: 10px;
+    border-top: 64px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: border 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    
+    
+    
+}
+a.btn2:hover {
+    height: 64px;
+    padding: 22px 25px 20px 25px;
+    border-top: 0px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 1;
+    transition: border 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    
+      
+}
+a.btn2:active {
+    height: 64px;
+    padding: 22px 15px 20px 25px;
+    border-top: 0px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 1;
+    transition: border 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+    
+      
+}
+
+a.btn1 {
+    height: 64px;
+    padding: 22px 25px 20px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 64px;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 0;
+    
+}
+a.btn1:hover {
+    height: 64px;
+    padding: 22px 25px 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 64px;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 0;
+      
+}
+
+a.btn0 {
+    height: 64px;
+    padding: 22px 25px 20px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 64px;
+    border-radius: 10px;    
+}
+
+a.link0 {
+    height: 64px;
+    padding: 22px 60px 20px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: padding 0.2s ease-in-out;
+   
+}
+
+a.link0:hover {
+    height: 64px;
+    padding: 22px 55px 20px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width:200px ;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: padding 0.2s ease-in-out;
+   
+}
+
